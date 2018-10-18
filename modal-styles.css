@@ -1,0 +1,135 @@
+#modal {
+    font-family: "Open Sans", arial, sans-serif;
+}
+
+#modal .modal {
+    display: block;
+    position: fixed;
+    z-index: 666;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal h2 {
+    display: inline-block;
+    font-size: 2em;
+    font-weight: normal;
+    font-family: "Bitter", "Open Sans", arial, serif;
+}
+
+#modal .button {
+    padding: 1em 2em;
+    color: #fff;
+    border: 0;
+}
+
+#modal .button:hover {
+    background: #333;
+}
+
+#modal .button-wrapper {
+    padding-bottom: 1.5em;
+}
+
+#modal .button-wrapper button {
+    float: right;
+    color: #2A5DB0;
+}
+
+#modal .button-wrapper .tna-button {
+    background: #008484;
+    color: #fff;
+    padding: 0.5em;
+    min-width: 24px;
+    cursor: pointer;
+    float: right;
+    margin-left: 1em;
+    text-decoration: none;
+}
+
+#modal .button-wrapper .tna-button:hover, #modal .button-wrapper .tna-button:focus {
+    background: #FCE45C;
+    color: #000;
+    border: none;
+    text-decoration: underline;
+}
+
+#modal .modal-content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+    padding: 2em;
+    border-radius: 0.5rem;
+    max-width: 45%;
+}
+
+#modal .modal-header h2, .modal-header h3, .modal-footer h2, .modal-footer h3 {
+    margin: 0;
+}
+
+#modal .closeBtn {
+    float: right;
+    font-size: 30px;
+    color: #999;
+    margin: -1.5rem -1rem -1rem auto;
+    background: none;
+    border: none;
+}
+
+#modal .closeBtn:hover, .closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal .close-button {
+    border: none;
+    text-decoration: none;
+    background: none;
+    font-size: 16px;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+#modal .close-button:hover {
+    text-decoration: underline;
+}
+
+#modal a:focus, button:focus, span:focus {
+    outline: #ebab00 solid 3px;
+}
+
+#modal #surveyBtn:focus, a.focus:focus {
+    background-color: #FCE45C;
+    color: #111;
+    text-decoration: underline;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    #dialog-title {
+        font-size: 4em;
+    }
+
+    .modal-content {
+        max-width: 70%;
+    }
+
+    .closeBtn {
+        margin: -2rem -2rem 1rem auto;
+    }
