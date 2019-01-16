@@ -19,6 +19,6 @@ It is intended to be integrated by:
  
 * Clone this repo and run `npm start` (this just masks a Bash command to kick off a PHP server  and open Chrome)
 * GruntJS is available for any automation tasks you may need (it is currently doing JSHint only)
-* `index.html` is the place to put anything you're expecting to be available in the host pages (i.e. jQuery has been added via a `<script>` tag).
+* `index.html` is the place to put anything you're expecting to be available in the host pages (i.e. jQuery has been added via a `<script>` tag)
  
  
